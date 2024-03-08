@@ -9,7 +9,4 @@ public class Quiz_02 {
 		System.out.println(oneTime);
 	}
 
-	
-	
-	
 }
