@@ -14,6 +14,7 @@ public class ArrayQuiz {
 //		for (i = 0; i<nums.length; i++) {
 //			nums[i] = rand.nextInt(100);
 //		}
+		
 //		for (j=0; j<1000; j++) {
 //			System.out.println(nums[i]);
 //		}
@@ -22,7 +23,7 @@ public class ArrayQuiz {
 	       int randInt=1000; 
 	       int[] result=new int[randInt];
 	       
-	       for(int i=0; i<1001; i++){
+	       for(int i=0; i<1000; i++){
 	           ++result[(int)(Math.random()*randInt)];
 	       }
 	       for(int i=0;i<randInt;i++){
