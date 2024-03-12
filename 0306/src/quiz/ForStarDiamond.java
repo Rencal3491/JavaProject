@@ -17,24 +17,24 @@ public class ForStarDiamond {
 		     ***
 		      *
 		 */
-		for (int i = 1; i < 6; i++) {
-			for (int j = 5; j > i; j--) {         
-				System.out.print(" ");
-			}
-			for (int j = 1; j <= i * 2 - 1; j++) {
-				System.out.print("*");
-			}
-			System.out.println();
-		}
-		for (int i = 4; i > 0; i--) {             
-			for (int j = 5; j > i; j--) {
-				System.out.print(" ");
-			}
-			for (int j = 1; j <= i * 2 - 1; j++) {
-				System.out.print("*");
-			}
-			System.out.println();
-		}
+//		for (int i = 1; i < 6; i++) {
+//			for (int j = 5; j > i; j--) {         
+//				System.out.print(" ");
+//			}
+//			for (int j = 1; j <= i * 2 - 1; j++) {
+//				System.out.print("*");
+//			}
+//			System.out.println();
+//		}
+//		for (int i = 4; i > 0; i--) {             
+//			for (int j = 5; j > i; j--) {
+//				System.out.print(" ");
+//			}
+//			for (int j = 1; j <= i * 2 - 1; j++) {
+//				System.out.print("*");
+//			}
+//			System.out.println();
+//		}
 		
 		
 			
@@ -45,21 +45,31 @@ public class ForStarDiamond {
 		int line = sc.nextInt();
 		int star = 1;
 		int space = line / 2;
+		int inSpace = 1;
 		int i,j;
 		
-		for(i = 0; i < line; i++) {
-			for(j = 0; j < space; j++)
-				System.out.print(" ");
-			for(j = 0; j < star; j++)
+		for(i = 0; i < line; i++) {	  	//반복횟수 줄 수만큼 설정
+			for(j = 0; j < space; j++) 	//여백
+				System.out.print(" "); 		
+			for(j = 0; j < star; j++) {	//별찍기
 				System.out.print("*");
-			System.out.println();			
-			if (i < line / 2) {
-				star += 2;
-				space--;
-			}else {
-				star -= 2;
-				space++;
 			}
+			for(j = 0; j < inSpace; j++)//여백
+				System.out.print(" ");
+			for(j = 0; j < star; j++) 	//별찍기
+				System.out.print("*");
+			System.out.println();	
+					
+			if (i < line / 2) {   	  	//줄의 중간값보다 작으면 별+2 공백-- 				
+				space--;
+				inSpace+=2;
+			}else {	 					//줄의 중간값보다 크면 별-2 공백++				
+				space++;
+				inSpace-=2;
+			}
+			
+			
 		}
+		sc.close();
 	}
 }
