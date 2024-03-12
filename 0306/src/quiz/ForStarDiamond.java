@@ -35,6 +35,8 @@ public class ForStarDiamond {
 			}
 			System.out.println();
 		}
+		
+		
 			
 		// 2. 1번의 코드를 활용하여 줄 수를 입력 받아서 그 줄 수 에 맞는 다이아몬드 별을 찍는 
 		 		//   프로그램을 작성해 보세요. (단, 줄은 홀수로만 입력 받아야 합니다.)
