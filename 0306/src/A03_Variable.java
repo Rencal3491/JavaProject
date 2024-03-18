@@ -42,10 +42,11 @@ public class A03_Variable {
 		// ex) insertCustomerData()
 		
 		int a = 10; //변수의 선언 : 데이터타입  변수명 = 초기화 값;
-		String str = "Hello, world!";
+		String str = "Hello, world!"; //String 타입 "Hello, world!" 값을 가지는 str 선언
 		
 		System.out.println(a);
 		System.out.println(str);
+		
 		
 //		int a = 20; 	// 같은 이름의 변수는 밑에서 다시 선언 불가
 		a = 20; 		// 재사용은 가능함

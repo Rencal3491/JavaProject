@@ -8,16 +8,17 @@ public class A02_Escape {
 		// 앞에 \(백슬래쉬가 붙어있는 문자는 이스케이프 문자로 인식)
 		// \n(줄바꿈)\t(탭) \\(\문자) \"(문자 ") \'(문자 ') 등등
 		
-		System.out.println("안녕하세요. 반\n갑습니다.");
-		System.out.println("안녕하세요. 반\t갑습니다.");
-		System.out.println("안녕하세요. 반\\갑습니다.");
-		System.out.println("안녕하세요. 반\"갑습니다.");
-		System.out.println("안녕하세요. 반\'갑습니다.");
-		System.out.println("C:\\User\\Test\\Desktop");
-		System.out.println("나는 \"철수\"랑 게임을 했다");
-		System.out.println("나는 \'철수\'`랑 게임을 했다");
-		System.out.println('\'');
-		System.out.println('\"');
+		System.out.println("안녕하세요. 반\n갑습니다."); 		// \n - 줄넘김
+		System.out.println("안녕하세요. 반\t갑습니다."); 		// \t - 들여쓰기(탭)
+		System.out.println("안녕하세요. 반\\갑습니다."); 		// \\ - \ 
+		System.out.println("안녕하세요. 반\"갑습니다."); 		// \" - "
+		System.out.println("안녕하세요. 반\'갑습니다."); 		//
+		System.out.println("C:\\User\\Test\\Desktop");	// C:\User\Test\Desktop
+		System.out.println("나는 \"철수\"랑 게임을 했다");	// 나는 "철수"랑 게임을 했다
+		System.out.println("나는 \'철수\'`랑 게임을 했다");	// 나는 '철수'`랑 게임을 했다
+		System.out.println('\'');						// \' - '
+		System.out.println('\"');						// \" - "
 	}
+	
 
 }

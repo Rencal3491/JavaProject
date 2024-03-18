@@ -3,8 +3,7 @@ public class A06_operator {
 
 	public static void main(String[] args) {
 		//연산자
-		int a = 7, b=3;
-		
+		int a = 7, b=3;	
 		//산술연산자
 		System.out.println("*** 산술 연산자 ***");
 		System.out.println(a + b);
@@ -57,7 +56,6 @@ public class A06_operator {
 		System.out.println(a); //10
 		a %= 3;		//a = a % 3
 		System.out.println(a); //1
-		
 		
 		System.out.println("*** 삼항 연산자 ***");
 		//삼항연산자
