@@ -7,6 +7,7 @@ public class Student extends person {
 	public String studentId;
 	public String major;
 	
+	public String name;
 	
 	/*
 	 *  this와 super
@@ -53,6 +54,12 @@ public class Student extends person {
 		System.out.println(name + "은/는 공부합니다.");
 	}
 	
+	public String getMajor() {
+		return major;
+	}
+	public String getName() {
+		return name;
+	}
 	//Overriding 이란
 	// 부모 클래스로부터 상속받은 메소드를 자식 클래스에서 행위(메소드)를 
 	// 바꾸거나 바꾸거나 보완하기 위해서 재정의 하는것
