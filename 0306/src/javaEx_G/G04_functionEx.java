@@ -3,7 +3,7 @@ import java.util.function.Function;
 
 import obj.inheritance.goodcase.Student;
 
-public class G04_functionEX {
+public class G04_functionEx {
 
 	/*
 	 *  Function 인터페이스는 매개변수와 리턴값이 모두 있는 추상 메서드 apply를 가지고 있음.
